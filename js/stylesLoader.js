@@ -3,7 +3,7 @@ const addStylesheet = (src) => {
     document.createStylesheet(src);
   } else {
     const element = document.createElement('link');
-    element.src = src;
+    element.href = src;
     element.rel = 'stylesheet';
     element.type = 'text/css';
 
@@ -11,13 +11,11 @@ const addStylesheet = (src) => {
   }
 }
 
-document.addEventListener("load", () => {
-  const stylesheets = [
-    '/css/owl.carousel.css',
-    '/css/owl.transitions.css',
-  ];
+const stylesheets = [
+  '/css/owl.carousel.css',
+  '/css/owl.transitions.css',
+];
 
-  stylesheets.forEach(src => {
-    addStylesheet(src);
-  });
+stylesheets.forEach(src => {
+  addStylesheet(src);
 });
