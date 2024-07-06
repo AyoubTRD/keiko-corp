@@ -12,8 +12,8 @@ const addStylesheet = (src) => {
 }
 
 const stylesheets = [
-  '/css/owl.carousel.css',
-  '/css/owl.transitions.css',
+  'css/owl.carousel.css',
+  'css/owl.transitions.css',
 ];
 
 stylesheets.forEach(src => {
